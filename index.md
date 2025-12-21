@@ -34,7 +34,7 @@ layout: default
     model weight compression to find favorable points along a compute/quality tradeoff, and contribute a model
     variant with 24 ms total latency for the speech enhancement task.
 </p>
-<p>
+<p class="abstract">
     Our work looks beyond theoretical latencies, showing that high-quality streaming generative speech processing
     can be realized on consumer GPUs available today. Stream.FM <span class="reference" data-ref="streamfm"></span> can solve a variety of speech processing tasks in
     a streaming fashion: speech enhancement, dereverberation, codec post-filtering, bandwidth extension, STFT
