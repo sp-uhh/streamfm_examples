@@ -13,7 +13,7 @@ layout: default
     Simon Welker, Bunlong Lay, Maris Hillemann, Tal Peer, Timo Gerkmann
 </p>
 <p class="left-align">
-    <a href="#todo">arXiv preprint (coming soon)</a>
+    <a href="https://arxiv.org/abs/2512.19442">arXiv preprint</a>
 </p>
 
 <h2>
@@ -472,14 +472,16 @@ HiFi-GAN <span class="reference" data-ref="hifi-gan"></span> <span class="refere
     title={Real-Time Streamable Generative Speech Restoration with Flow Matching},
     author={Simon Welker and Bunlong Lay and Maris Hillemann and Tal Peer and Timo Gerkmann},
     year={2025},
-    journal={Preprint},
+    journal={arXiv preprint arXiv:2512.19442},
+    doi={10.48550/arXiv.2512.19442}
 }{% endraw %}">
 <pre><code>{% raw %}@article{
     welker2025streamfm,
     title={Real-Time Streamable Generative Speech Restoration with Flow Matching},
     author={Simon Welker and Bunlong Lay and Maris Hillemann and Tal Peer and Timo Gerkmann},
     year={2025},
-    journal={Preprint},
+    journal={arXiv preprint arXiv:2512.19442},
+    doi={10.48550/arXiv.2512.19442}
 } {% endraw %}</code></pre>
     </div>
     <button id="copyButton" class="highlight">
@@ -513,7 +515,7 @@ HiFi-GAN <span class="reference" data-ref="hifi-gan"></span> <span class="refere
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const references = {
-            "streamfm": "S. Welker, B. Lay, M. Hillemann, T. Peer, and T. Gerkmann, “Real-Time Streamable Generative Speech Restoration with Flow Matching,“, preprint, 2025.",
+            "streamfm": "S. Welker, B. Lay, M. Hillemann, T. Peer, and T. Gerkmann, “Real-Time Streamable Generative Speech Restoration with Flow Matching,“, arXiv preprint arXiv:2512.19442, 2025.",
             "flowdec": "S. Welker, M. Le, R. T. Q. Chen, W.-N. Hsu, and T. Gerkmann, A. Richard, Y.-C. Wu, “FlowDec: A flow-based full-band general audio codec with high perceptual quality,” in The Thirteenth International Conference on Learning Representations (ICLR), 2025.",
             "diffbuff-interspeech": "B. Lay, R. Makarov, and T. Gerkmann, “Diffusion buffer: Online diffusion-based speech enhancement with sub-second latency,” Interspeech, 2025.",
             "diffbuff-journal": "B. Lay, R. Makarov, S. Welker, M. Hillemann, and T. Gerkmann, “Diffusion buffer for online generative speech enhancement,” arXiv preprint arXiv:2510.18744, 2025.",
