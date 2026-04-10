@@ -1,6 +1,10 @@
 .abstract {
     font-size: 90%;
 }
+a:hover, a:focus {
+    font-weight: inherit;
+    text-decoration: underline;
+}
 audio {
    width: 100%;
 }
@@ -123,4 +127,44 @@ header {
     .smallmobile-only {
         display: inline;
     }
+}
+
+
+
+/* https://awik.io/create-divider-text-middle-using-hr-tag-css/ */
+.hr-text {
+    background: none;
+    border: 0;
+    line-height: 1em;
+    position: relative;
+    text-align: center;
+    height: 1.5em;
+    font-size: 14px;
+    margin: 0.5em 0 0.3em 0;
+}
+
+.hr-text::before {
+    content: "";
+    background: linear-gradient(to right, transparent, #1a1a1a, transparent);
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 80%;
+    height: 1px;
+}
+
+.hr-text::after {
+    content: attr(data-content);
+    position: relative;
+    padding: 0 7px;
+    line-height: 1.5em;
+    color: #1a1a1a;
+    background-color: white;
+}
+
+p.jump {
+    margin: 0.5em 0;
+}
+p.jump-top {
+    margin: 0.5em 0 0.8em 0;
 }

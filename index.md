@@ -45,7 +45,7 @@ layout: default
 </p>
 
 
-<h2>Speech Enhancement</h2>
+<h2 id="se">Speech Enhancement</h2>
 <p>Select an audio file: &nbsp;&nbsp; <br class="smallmobile-only">
     <select id="audioSelect0" onchange="playAudio0()">
         <option value="p102_84" selected>p102_84</option>
@@ -63,61 +63,83 @@ layout: default
     </select>
 </p>
 
-<p class="black">
-Clean: <br>
+<p class="black"> Clean: <br>
  <audio id="audioPlayer0_clean" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Noisy: <br>
+ </audio><br>  Noisy: <br>
  <audio id="audioPlayer0_noisy" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (4xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (4xEuler): <br>
  <audio id="audioPlayer0_stream_fm_4xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Diffusion Buffer <span class="reference" data-ref="diffbuff-interspeech"></span><span class="reference" data-ref="diffbuff-journal"></span> (d=0): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK4): <br>
+ <audio id="audioPlayer0_stream_fm_lrk4" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK4-PESQ): <br>
+ <audio id="audioPlayer0_stream_fm_lrk4_pesq" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (1xEuler): <br>
+ <audio id="audioPlayer0_stream_fm_1xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> Initial Predictor: <br>
+ <audio id="audioPlayer0_stream_fm_initial_predictor" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Diffusion Buffer <span class="reference" data-ref="diffbuff-interspeech"></span><span class="reference" data-ref="diffbuff-journal"></span> (d=0): <br>
  <audio id="audioPlayer0_diffusion_buffer_d_0" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Diffusion Buffer <span class="reference" data-ref="diffbuff-interspeech"></span><span class="reference" data-ref="diffbuff-journal"></span> (d=9): <br>
+ </audio><br>  Diffusion Buffer <span class="reference" data-ref="diffbuff-interspeech"></span><span class="reference" data-ref="diffbuff-journal"></span> (d=9): <br>
  <audio id="audioPlayer0_diffusion_buffer_d_9" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-DEMUCS <span class="reference" data-ref="demucs"></span>: <br>
- <audio id="audioPlayer0_demucs" controls>
+ </audio><br>  Causal SEMamba <span class="reference" data-ref="semamba"></span><span class="reference" data-ref="diffbuff-journal"></span>: <br>
+ <audio id="audioPlayer0_causal_semamba" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-DeepFilterNet3 <span class="reference" data-ref="deepfilternet3"></span>: <br>
+ </audio><br>  DeepFilterNet3 <span class="reference" data-ref="deepfilternet3"></span>: <br>
  <audio id="audioPlayer0_deepfilternet3" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-HiFi-Stream <span class="reference" data-ref="hifistream"></span>: <br>
+ </audio><br>  DEMUCS <span class="reference" data-ref="demucs"></span>: <br>
+ <audio id="audioPlayer0_demucs" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  CleanUMamba <span class="reference" data-ref="cleanumamba"></span>: <br>
+ <audio id="audioPlayer0_cleanumamba" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  HiFi-Stream <span class="reference" data-ref="hifistream"></span>: <br>
  <audio id="audioPlayer0_hifi_stream" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-aTENNuate <span class="reference" data-ref="attenuate"></span>: <br>
- <audio id="audioPlayer0_atennuate" controls>
+ </audio><br> </p><hr class="hr-text gradient" data-content="NON-CAUSAL"><p class="black"> FM <span class="reference" data-ref="streamfm"></span> (4xEuler): <br>
+ <audio id="audioPlayer0_fm_4xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-FM <span class="reference" data-ref="streamfm"></span> (4xEuler): <br>
- <audio id="audioPlayer0_fm_4xeuler" controls>
+ </audio><br>  SBVE <span class="reference" data-ref="sbve"></span> <span class="reference" data-ref="sbve-investigating"></span>: <br>
+ <audio id="audioPlayer0_sbve" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  AnyEnhance <span class="reference" data-ref="anyenhance"></span><span class="reference" data-ref="anyenhance-challenge"></span>: <br>
+ <audio id="audioPlayer0_anyenhance" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  aTENNuate <span class="reference" data-ref="attenuate"></span>: <br>
+ <audio id="audioPlayer0_atennuate" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants0 = ["clean","noisy","stream_fm_4xeuler","diffusion_buffer_d_0","diffusion_buffer_d_9","demucs","deepfilternet3","hifi_stream","atennuate","fm_4xeuler"];
+    let variants0 = ["clean","noisy","stream_fm_4xeuler","stream_fm_lrk4","stream_fm_lrk4_pesq","stream_fm_1xeuler","stream_fm_initial_predictor","diffusion_buffer_d_0","diffusion_buffer_d_9","causal_semamba","deepfilternet3","demucs","cleanumamba","hifi_stream","fm_4xeuler","sbve","anyenhance","atennuate"];
     function playAudio0() {
         let selectedAudio = document.getElementById("audioSelect0").value;
         if(selectedAudio) {
@@ -133,7 +155,7 @@ FM <span class="reference" data-ref="streamfm"></span> (4xEuler): <br>
 </script>
         
 
-<h2>Dereverberation</h2>
+<h2 id="derev">Dereverberation</h2>
 <p>Select an audio file: &nbsp;&nbsp; <br class="smallmobile-only">
     <select id="audioSelect1" onchange="playAudio1()">
         <option value="p102_84" selected>p102_84</option>
@@ -151,36 +173,47 @@ FM <span class="reference" data-ref="streamfm"></span> (4xEuler): <br>
     </select>
 </p>
 
-<p class="black">
-Clean: <br>
+<p class="black"> Clean: <br>
  <audio id="audioPlayer1_clean" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Reverberant: <br>
+ </audio><br>  Reverberant: <br>
  <audio id="audioPlayer1_reverberant" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer1_stream_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
  <audio id="audioPlayer1_stream_fm_lrk5" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5-PESQ): <br>
+ <audio id="audioPlayer1_stream_fm_lrk5_pesq" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (1xEuler): <br>
+ <audio id="audioPlayer1_stream_fm_1xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br> </p><hr class="hr-text gradient" data-content="NON-CAUSAL"><p class="black"> FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer1_fm_5xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  SGMSE+ <span class="reference" data-ref="sgmseplus"></span> (48 kHz): <br>
+ <audio id="audioPlayer1_sgmse_48_khz" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  AnyEnhance <span class="reference" data-ref="anyenhance"></span><span class="reference" data-ref="anyenhance-challenge"></span> (44.1 kHz): <br>
+ <audio id="audioPlayer1_anyenhance_44_1_khz" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants1 = ["clean","reverberant","stream_fm_5xeuler","stream_fm_lrk5","fm_5xeuler"];
+    let variants1 = ["clean","reverberant","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_lrk5_pesq","stream_fm_1xeuler","fm_5xeuler","sgmse_48_khz","anyenhance_44_1_khz"];
     function playAudio1() {
         let selectedAudio = document.getElementById("audioSelect1").value;
         if(selectedAudio) {
@@ -196,7 +229,7 @@ FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
 </script>
         
 
-<h2>Codec Postfiltering (Lyra V2)</h2>
+<h2 id="lyra">Codec Postfiltering (Lyra V2)</h2>
 <p>Select an audio file: &nbsp;&nbsp; <br class="smallmobile-only">
     <select id="audioSelect2" onchange="playAudio2()">
         <option value="p102_84" selected>p102_84</option>
@@ -214,36 +247,43 @@ FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
     </select>
 </p>
 
-<p class="black">
-Clean: <br>
+<p class="black"> Clean: <br>
  <audio id="audioPlayer2_clean" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Lyra V2 Decoder: <br>
+ </audio><br>  Lyra V2 Decoder: <br>
  <audio id="audioPlayer2_lyra_v2_decoder" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer2_stream_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
  <audio id="audioPlayer2_stream_fm_lrk5" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5-PESQ): <br>
+ <audio id="audioPlayer2_stream_fm_lrk5_pesq" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (1xEuler): <br>
+ <audio id="audioPlayer2_stream_fm_1xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br> </p><hr class="hr-text gradient" data-content="NON-CAUSAL"><p class="black"> FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer2_fm_5xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  AnyEnhance <span class="reference" data-ref="anyenhance"></span><span class="reference" data-ref="anyenhance-challenge"></span> (16 kHz): <br>
+ <audio id="audioPlayer2_anyenhance_16_khz" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants2 = ["clean","lyra_v2_decoder","stream_fm_5xeuler","stream_fm_lrk5","fm_5xeuler"];
+    let variants2 = ["clean","lyra_v2_decoder","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_lrk5_pesq","stream_fm_1xeuler","fm_5xeuler","anyenhance_16_khz"];
     function playAudio2() {
         let selectedAudio = document.getElementById("audioSelect2").value;
         if(selectedAudio) {
@@ -259,7 +299,7 @@ FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
 </script>
         
 
-<h2>Bandwidth Extension</h2>
+<h2 id="bwe">Bandwidth Extension</h2>
 <p>Select an audio file: &nbsp;&nbsp; <br class="smallmobile-only">
     <select id="audioSelect3" onchange="playAudio3()">
         <option value="p102_84" selected>p102_84</option>
@@ -277,36 +317,43 @@ FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
     </select>
 </p>
 
-<p class="black">
-Clean: <br>
+<p class="black"> Clean: <br>
  <audio id="audioPlayer3_clean" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Downsampled: <br>
+ </audio><br>  Downsampled: <br>
  <audio id="audioPlayer3_downsampled" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer3_stream_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
  <audio id="audioPlayer3_stream_fm_lrk5" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5-PESQ): <br>
+ <audio id="audioPlayer3_stream_fm_lrk5_pesq" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (1xEuler): <br>
+ <audio id="audioPlayer3_stream_fm_1xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br> </p><hr class="hr-text gradient" data-content="NON-CAUSAL"><p class="black"> FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer3_fm_5xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  AnyEnhance <span class="reference" data-ref="anyenhance"></span><span class="reference" data-ref="anyenhance-challenge"></span> (44.1 kHz): <br>
+ <audio id="audioPlayer3_anyenhance_44_1_khz" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants3 = ["clean","downsampled","stream_fm_5xeuler","stream_fm_lrk5","fm_5xeuler"];
+    let variants3 = ["clean","downsampled","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_lrk5_pesq","stream_fm_1xeuler","fm_5xeuler","anyenhance_44_1_khz"];
     function playAudio3() {
         let selectedAudio = document.getElementById("audioSelect3").value;
         if(selectedAudio) {
@@ -322,7 +369,7 @@ FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
 </script>
         
 
-<h2>STFT Phase Retrieval</h2>
+<h2 id="pr">STFT Phase Retrieval</h2>
 <p>Select an audio file: &nbsp;&nbsp; <br class="smallmobile-only">
     <select id="audioSelect4" onchange="playAudio4()">
         <option value="p102_84" selected>p102_84</option>
@@ -340,41 +387,39 @@ FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
     </select>
 </p>
 
-<p class="black">
-Clean: <br>
+<p class="black"> Clean: <br>
  <audio id="audioPlayer4_clean" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Zero-phase: <br>
+ </audio><br>  Zero-phase: <br>
  <audio id="audioPlayer4_zero_phase" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer4_stream_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
  <audio id="audioPlayer4_stream_fm_lrk5" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
- <audio id="audioPlayer4_fm_5xeuler" controls>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (1xEuler): <br>
+ <audio id="audioPlayer4_stream_fm_1xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-RTISI-DM <span class="reference" data-ref="rtisi-ng"></span>: <br>
+ </audio><br>  RTISI-DM <span class="reference" data-ref="rtisi-ng"></span>: <br>
  <audio id="audioPlayer4_rtisi_dm" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br> </p><hr class="hr-text gradient" data-content="NON-CAUSAL"><p class="black"> FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ <audio id="audioPlayer4_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants4 = ["clean","zero_phase","stream_fm_5xeuler","stream_fm_lrk5","fm_5xeuler","rtisi_dm"];
+    let variants4 = ["clean","zero_phase","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_1xeuler","rtisi_dm","fm_5xeuler"];
     function playAudio4() {
         let selectedAudio = document.getElementById("audioSelect4").value;
         if(selectedAudio) {
@@ -390,7 +435,7 @@ RTISI-DM <span class="reference" data-ref="rtisi-ng"></span>: <br>
 </script>
         
 
-<h2>Mel Vocoding</h2>
+<h2 id="mel">Mel Vocoding</h2>
 <p>Select an audio file: &nbsp;&nbsp; <br class="smallmobile-only">
     <select id="audioSelect5" onchange="playAudio5()">
         <option value="p102_84" selected>p102_84</option>
@@ -408,33 +453,35 @@ RTISI-DM <span class="reference" data-ref="rtisi-ng"></span>: <br>
     </select>
 </p>
 
-<p class="black">
-Clean: <br>
+<p class="black"> Clean: <br>
  <audio id="audioPlayer5_clean" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Pseudoinverse + Zero-phase: <br>
+ </audio><br>  Pseudoinverse + Zero-phase: <br>
  <audio id="audioPlayer5_pseudoinverse_zero_phase" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Pseudoinverse + RTISI-DM <span class="reference" data-ref="rtisi-ng"></span>: <br>
+ <audio id="audioPlayer5_pseudoinverse_rtisi_dm" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer5_stream_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (LRK5): <br>
  <audio id="audioPlayer5_stream_fm_lrk5" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
+ </audio><br>  Stream.FM <span class="reference" data-ref="streamfm"></span> (1xEuler): <br>
+ <audio id="audioPlayer5_stream_fm_1xeuler" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
+ </audio><br> </p><hr class="hr-text gradient" data-content="NON-CAUSAL"><p class="black"> FM <span class="reference" data-ref="streamfm"></span> (5xEuler): <br>
  <audio id="audioPlayer5_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
- </audio><br> 
-HiFi-GAN <span class="reference" data-ref="hifi-gan"></span> <span class="reference" data-ref="speechbrain"></span> (16 kHz): <br>
+ </audio><br>  HiFi-GAN <span class="reference" data-ref="hifi-gan"></span> <span class="reference" data-ref="speechbrain"></span> (16 kHz): <br>
  <audio id="audioPlayer5_hifi_gan_16_khz" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
@@ -442,7 +489,7 @@ HiFi-GAN <span class="reference" data-ref="hifi-gan"></span> <span class="refere
 </p>
 
 <script>
-    let variants5 = ["clean","pseudoinverse_zero_phase","stream_fm_5xeuler","stream_fm_lrk5","fm_5xeuler","hifi_gan_16_khz"];
+    let variants5 = ["clean","pseudoinverse_zero_phase","pseudoinverse_rtisi_dm","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_1xeuler","fm_5xeuler","hifi_gan_16_khz"];
     function playAudio5() {
         let selectedAudio = document.getElementById("audioSelect5").value;
         if(selectedAudio) {
@@ -526,6 +573,13 @@ HiFi-GAN <span class="reference" data-ref="hifi-gan"></span> <span class="refere
             "deepfilternet3": "H. Schröoter, T. Rosenkranz, A. N. Escalante-B., and A. Maier, “DeepFilterNet: Perceptually motivated real-time speech enhancement,” in Interspeech, 2023.",
             "hifistream": "E. Dmitrieva and M. Kaledin, “HiFi-Stream: Streaming speech enhancement with generative adversarial networks,” IEEE Signal Proc. Lett. (SPL), vol. 32, pp. 3595–3599, 2025.",
             "attenuate": "Y. R. Pei, R. Shrivastava, and F. Sidharth, “Optimized Real-time Speech Enhancement with Deep SSMs on Raw Audio,” in Interspeech, 2025.",
+            "semamba": "R. Chao, W.-H. Cheng, M. L. Quatra, S. M. Siniscalchi, C.-H. H. Yang, S.-W. Fu, and Y. Tsao, “An investigation of incorporating Mamba for speech enhancement,” in 2024 IEEE Spoken Language Technology Workshop (SLT), 2024.",
+            "cleanumamba": "S. Groot, Q. Chen, J. C. van Gemert, and C. Gao, “CleanUMamba: A compact mamba network for speech denoising using channel pruning,” in IEEE International Symposium on Circuits and Systems (ISCAS), 2025.",
+            "anyenhance": "J. Zhang, J. Yang, Z. Fang, Y. Wang, Z. Zhang, Z. Wang, F. Fan, and Z. Wu, “AnyEnhance: A unified generative model with prompt-guidance and self-critic for voice enhancement,” IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLP), 2025.",
+            "anyenhance-challenge": "J. Zhang, M. Zhu, X. Xu, H. Bu, Z. Ling, and Z. Wu, “The CCF AATC 2025 speech restoration challenge: A retrospective,” arXiv preprint arXiv:2509.12974, 2025.",
+            "sbve": "A. Jukić, R. Korostik, J. Balam, and B. Ginsburg, “Schrödinger bridge for generative speech enhancement,” in Interspeech, 2024.",
+            "sbve-investigating": "J. Richter, D. de Oliveira, and T. Gerkmann, “Investigating training objectives for generative speech enhancement,” in IEEE Int. Conf. on Acoustics, Speech and Signal Proc. (ICASSP), 2025.",
+            "sgmseplus": "J. Richter, S. Welker, J.-M. Lemercier, B. Lay, and T. Gerkmann, “Speech enhancement and dereverberation with diffusion-based generative models,” IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLP), vol. 31, pp. 2351–2364, 2023."
         };
 
         // Collect keys in order of their appearance, without duplication
