@@ -418,11 +418,15 @@ layout: default
  <audio id="audioPlayer4_fm_5xeuler" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
+ </audio><br>  DiffPhase: <br>
+ <audio id="audioPlayer4_diffphase" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants4 = ["clean","zero_phase","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_1xeuler","rtisi_dm","fm_5xeuler"];
+    let variants4 = ["clean","zero_phase","stream_fm_5xeuler","stream_fm_lrk5","stream_fm_1xeuler","rtisi_dm","fm_5xeuler","diffphase"];
     function playAudio4() {
         let selectedAudio = document.getElementById("audioSelect4").value;
         if(selectedAudio) {
@@ -582,7 +586,8 @@ layout: default
             "anyenhance-challenge": "J. Zhang, M. Zhu, X. Xu, H. Bu, Z. Ling, and Z. Wu, “The CCF AATC 2025 speech restoration challenge: A retrospective,” arXiv preprint arXiv:2509.12974, 2025.",
             "sbve": "A. Jukić, R. Korostik, J. Balam, and B. Ginsburg, “Schrödinger bridge for generative speech enhancement,” in Interspeech, 2024.",
             "sbve-investigating": "J. Richter, D. de Oliveira, and T. Gerkmann, “Investigating training objectives for generative speech enhancement,” in IEEE Int. Conf. on Acoustics, Speech and Signal Proc. (ICASSP), 2025.",
-            "sgmseplus": "J. Richter, S. Welker, J.-M. Lemercier, B. Lay, and T. Gerkmann, “Speech enhancement and dereverberation with diffusion-based generative models,” IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLP), vol. 31, pp. 2351–2364, 2023."
+            "sgmseplus": "J. Richter, S. Welker, J.-M. Lemercier, B. Lay, and T. Gerkmann, “Speech enhancement and dereverberation with diffusion-based generative models,” IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLP), vol. 31, pp. 2351–2364, 2023.",
+            "diffphase": "T. Peer, S. Welker, and T. Gerkmann, “DiffPhase: Generative diffusion-based STFT phase retrieval,” in IEEE Int. Conf. on Acoustics, Speech and Signal Proc. (ICASSP), 2023."
         };
 
         // Collect keys in order of their appearance, without duplication
