@@ -138,11 +138,15 @@ layout: default
  <audio id="audioPlayer0_atennuate" controls>
      <source src="" type="audio/wav">
      Your browser does not support the audio element.
+ </audio><br>  MambAttention <span class="reference" data-ref="mambattention"></span>: <br>
+ <audio id="audioPlayer0_mambattention" controls>
+     <source src="" type="audio/wav">
+     Your browser does not support the audio element.
  </audio><br>
 </p>
 
 <script>
-    let variants0 = ["clean","noisy","stream_fm_4xeuler","stream_fm_lrk4","stream_fm_lrk4_pesq","stream_fm_1xeuler","stream_fm_initial_predictor","diffusion_buffer_d_0","diffusion_buffer_d_9","causal_semamba","deepfilternet3","demucs","cleanumamba","hifi_stream","fm_4xeuler","sbve","anyenhance","atennuate"];
+    let variants0 = ["clean","noisy","stream_fm_4xeuler","stream_fm_lrk4","stream_fm_lrk4_pesq","stream_fm_1xeuler","stream_fm_initial_predictor","diffusion_buffer_d_0","diffusion_buffer_d_9","causal_semamba","deepfilternet3","demucs","cleanumamba","hifi_stream","fm_4xeuler","sbve","anyenhance","atennuate","mambattention"];
     function playAudio0() {
         let selectedAudio = document.getElementById("audioSelect0").value;
         if(selectedAudio) {
@@ -587,7 +591,8 @@ layout: default
             "sbve": "A. Jukić, R. Korostik, J. Balam, and B. Ginsburg, “Schrödinger bridge for generative speech enhancement,” in Interspeech, 2024.",
             "sbve-investigating": "J. Richter, D. de Oliveira, and T. Gerkmann, “Investigating training objectives for generative speech enhancement,” in IEEE Int. Conf. on Acoustics, Speech and Signal Proc. (ICASSP), 2025.",
             "sgmseplus": "J. Richter, S. Welker, J.-M. Lemercier, B. Lay, and T. Gerkmann, “Speech enhancement and dereverberation with diffusion-based generative models,” IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLP), vol. 31, pp. 2351–2364, 2023.",
-            "diffphase": "T. Peer, S. Welker, and T. Gerkmann, “DiffPhase: Generative diffusion-based STFT phase retrieval,” in IEEE Int. Conf. on Acoustics, Speech and Signal Proc. (ICASSP), 2023."
+            "diffphase": "T. Peer, S. Welker, and T. Gerkmann, “DiffPhase: Generative diffusion-based STFT phase retrieval,” in IEEE Int. Conf. on Acoustics, Speech and Signal Proc. (ICASSP), 2023.",
+            "mambattention": "N. L. K ¨uhne, J. Jensen, J. Østergaard, and Z.-H. Tan, “MambAttention: Mamba with multi-head attention for generalizable single-channel speech enhancement,” IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLP), vol. 34, pp. 820–833, 2026.",
         };
 
         // Collect keys in order of their appearance, without duplication
