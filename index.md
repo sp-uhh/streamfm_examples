@@ -10,7 +10,8 @@ layout: default
 </h1>
 
 <p class="left-align">
-    Simon Welker, Bunlong Lay, Maris Hillemann, Tal Peer, Timo Gerkmann
+    Simon Welker, Bunlong Lay, Maris Hillemann, Tal Peer, Timo Gerkmann<br>
+    IEEE Transactions on Audio, Speech and Language Processing, 2026
 </p>
 <p class="left-align">
     <a href="https://ieeexplore.ieee.org/document/11533884">IEEE TASLPRO publication</a> | <a href="https://arxiv.org/abs/2512.19442">arXiv preprint</a>
