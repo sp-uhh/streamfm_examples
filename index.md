@@ -13,7 +13,7 @@ layout: default
     Simon Welker, Bunlong Lay, Maris Hillemann, Tal Peer, Timo Gerkmann
 </p>
 <p class="left-align">
-    <a href="https://arxiv.org/abs/2512.19442">arXiv preprint</a>
+    <a href="https://ieeexplore.ieee.org/document/11533884">IEEE TASLPRO publication</a> | <a href="https://arxiv.org/abs/2512.19442">arXiv preprint</a>
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ezXzPia3EVs?si=DuYTKTEBorHzRNGW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -526,12 +526,12 @@ layout: default
 
 <div class="container">
     <div class="inner-container" dir="auto" data-snippet-clipboard-copy-content="{% raw %}@article{
-    welker2025streamfm,
+    welker2026streamfm,
     title={Real-Time Streamable Generative Speech Restoration with Flow Matching},
-    author={Simon Welker and Bunlong Lay and Maris Hillemann and Tal Peer and Timo Gerkmann},
-    year={2025},
-    journal={arXiv preprint arXiv:2512.19442},
-    doi={10.48550/arXiv.2512.19442}
+    author={Welker, Simon and Lay, Bunlong and Hillemann, Maris and Peer, Tal and Gerkmann, Timo},
+    year={2026},
+    journal={IEEE Transactions on Audio, Speech and Language Processing}, 
+    doi={10.1109/TASLPRO.2026.3696215}
 }{% endraw %}">
 <pre><code>{% raw %}@article{
     welker2025streamfm,
