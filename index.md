@@ -535,13 +535,13 @@ layout: default
     doi={10.1109/TASLPRO.2026.3696215}
 }{% endraw %}">
 <pre><code>{% raw %}@article{
-    welker2025streamfm,
+    welker2026streamfm,
     title={Real-Time Streamable Generative Speech Restoration with Flow Matching},
-    author={Simon Welker and Bunlong Lay and Maris Hillemann and Tal Peer and Timo Gerkmann},
-    year={2025},
-    journal={arXiv preprint arXiv:2512.19442},
-    doi={10.48550/arXiv.2512.19442}
-} {% endraw %}</code></pre>
+    author={Welker, Simon and Lay, Bunlong and Hillemann, Maris and Peer, Tal and Gerkmann, Timo},
+    year={2026},
+    journal={IEEE Transactions on Audio, Speech and Language Processing}, 
+    doi={10.1109/TASLPRO.2026.3696215}
+}{% endraw %}</code></pre>
     </div>
     <button id="copyButton" class="highlight">
         <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="octicon octicon-clippy">
@@ -574,7 +574,7 @@ layout: default
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const references = {
-            "streamfm": "S. Welker, B. Lay, M. Hillemann, T. Peer, and T. Gerkmann, “Real-Time Streamable Generative Speech Restoration with Flow Matching,“, arXiv preprint arXiv:2512.19442, 2025.",
+            "streamfm": "S. Welker, B. Lay, M. Hillemann, T. Peer, and T. Gerkmann, “Real-Time Streamable Generative Speech Restoration with Flow Matching,“, IEEE Trans. on Audio, Speech, and Lang. Proc. (TASLPRO), 2026.",
             "flowdec": "S. Welker, M. Le, R. T. Q. Chen, W.-N. Hsu, and T. Gerkmann, A. Richard, Y.-C. Wu, “FlowDec: A flow-based full-band general audio codec with high perceptual quality,” in The Thirteenth International Conference on Learning Representations (ICLR), 2025.",
             "diffbuff-interspeech": "B. Lay, R. Makarov, and T. Gerkmann, “Diffusion buffer: Online diffusion-based speech enhancement with sub-second latency,” Interspeech, 2025.",
             "diffbuff-journal": "B. Lay, R. Makarov, S. Welker, M. Hillemann, and T. Gerkmann, “Diffusion buffer for online generative speech enhancement,” arXiv preprint arXiv:2510.18744, 2025.",
